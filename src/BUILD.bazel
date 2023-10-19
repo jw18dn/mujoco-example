@@ -5,8 +5,10 @@ cc_binary(
     srcs = [
         "main.cpp",
     ],
+    data = ["//models:humanoid.xml"],
     deps = [
         "@mujoco//:mujoco",
+        "@glfw//:glfw",
     ],
     visibility = ["//visibility:public"],
 )

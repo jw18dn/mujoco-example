@@ -1,5 +1,6 @@
 package(default_visibility = ["//visibility:public"])
 
-exports_files(
-    glob(["*.xml"]),
+alias(
+    name = "glfw",
+    actual = "@glfw",
 )
